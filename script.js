@@ -3,11 +3,14 @@ const gridContainer = document.querySelector('#grid-container');
 const GRID_WIDTH = 16;
 const GRID_HEIGHT = 16;
 
-for (let grid_column = 0; grid_column < GRID_HEIGHT; grid_column++){
-    for (let grid_row = 0; grid_row < GRID_WIDTH; grid_row++){
+for (let gridColumnIndex = 0; gridColumnIndex < GRID_HEIGHT; gridColumnIndex++){
+    const gridRow = document.createElement('div');
+    gridContainer.appendChild(gridRow);
+
+    for (let gridRowIndex = 0; gridRowIndex < GRID_WIDTH; gridRowIndex++){
         const square = document.createElement('div');
         square.className = 'square';
 
-        gridContainer.appendChild(square);
+        gridRow.appendChild(square);
     }
 }
