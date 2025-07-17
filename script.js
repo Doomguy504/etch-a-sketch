@@ -1,9 +1,18 @@
 const gridContainer = document.querySelector('#grid-container');
+const resetButton = document.querySelector('#reset-button');
 
 const INITIAL_GRID_SIZE = 16;
 
 function changeColor(e){
     e.target.style.backgroundColor = 'black';
+}
+
+function reset(e){
+    const squares = document.querySelectorAll('.square');
+
+    squares.forEach((e) => {
+        e.style.backgroundColor = 'white';
+    });
 }
 
 function createGrid(gridDimensions){
@@ -21,5 +30,7 @@ function createGrid(gridDimensions){
         }
     }
 }
+
+resetButton.addEventListener('click', reset);
 
 createGrid(INITIAL_GRID_SIZE);
