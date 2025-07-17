@@ -9,6 +9,7 @@ function changeColor(e){
 
 for (let gridColumnIndex = 0; gridColumnIndex < GRID_HEIGHT; gridColumnIndex++){
     const gridRow = document.createElement('div');
+    gridRow.className = 'grid-row';
     gridContainer.appendChild(gridRow);
 
     for (let gridRowIndex = 0; gridRowIndex < GRID_WIDTH; gridRowIndex++){
