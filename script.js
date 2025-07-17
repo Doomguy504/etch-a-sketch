@@ -7,7 +7,7 @@ function changeColor(e){
     e.target.style.backgroundColor = 'black';
 }
 
-function reset(e){
+function reset(){
     const squares = document.querySelectorAll('.square');
 
     squares.forEach((e) => {
