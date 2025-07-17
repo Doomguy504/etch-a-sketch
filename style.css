@@ -7,7 +7,7 @@ body {
     gap: 10px;
 }
 
-#reset-button {
+button {
     font-size: larger;
     padding: 5px;
 }
